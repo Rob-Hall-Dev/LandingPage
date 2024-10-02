@@ -1,0 +1,60 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<MudAppBar Elevation="0" Color="Color.Primary">
+    <MudText Typo="Typo.h5" Class="ml-4">My Portfolio</MudText>
+    <MudSpacer />
+    <MudIconButton Icon="Icons.Material.Filled.Home" Color="Color.Inherit" />
+</MudAppBar>
+
+<MudContainer Class="mt-8">
+    <MudPaper Class="pa-6">
+        <MudText Align="Align.Center" Typo="Typo.h1">Welcome to My Portfolio</MudText>
+        <MudText Typo="Typo.subtitle1" Align="Align.Center">
+            Hello! I'm [Rob], a software developer passionate about building applications that solve real-world problems.
+        </MudText>
+    </MudPaper>
+
+    <MudText Typo="Typo.h4" Class="my-4">Projects</MudText>
+
+    <MudGrid>
+        <MudItem xs="12" sm="6" md="4">
+            <MudCard>
+                <MudCardMedia Image="https://via.placeholder.com/400" Alt="Project 1" />
+                <MudCardContent>
+                    <MudText Typo="Typo.h6">Project 1</MudText>
+                    <MudText Typo="Typo.body2">Brief description of the project.</MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Href="https://github.com/your-username/project1" Target="_blank" Variant="Variant.Filled" Color="Color.Primary">View on GitHub</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudCard>
+                <MudCardMedia Image="https://via.placeholder.com/400" Alt="Project 2" />
+                <MudCardContent>
+                    <MudText Typo="Typo.h6">Project 2</MudText>
+                    <MudText Typo="Typo.body2">Brief description of the project.</MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Href="https://github.com/your-username/project2" Target="_blank" Variant="Variant.Filled" Color="Color.Primary">View on GitHub</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        <!-- Add more projects as needed -->
+    </MudGrid>
+
+    <MudText Typo="Typo.h4" Class="my-4">Contact Me</MudText>
+    <MudPaper Class="pa-4">
+        <MudText Typo="Typo.body1">Feel free to reach out via:</MudText>
+        <MudButton Href="mailto:your-email@example.com" Variant="Variant.Outlined" Color="Color.Secondary">Email</MudButton>
+        <MudButton Href="https://www.linkedin.com/in/your-profile" Target="_blank" Variant="Variant.Outlined" Color="Color.Primary">LinkedIn</MudButton>
+    </MudPaper>
+</MudContainer>
+
+<MudDivider Class="mt-8 mb-2" />
+<MudText Typo="Typo.body2" Align="Align.Center">© 2024 [Your Name]. All rights reserved.</MudText>
+
+
